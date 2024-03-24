@@ -18,7 +18,7 @@ const AchievementCard = () => {
 
           <div>
             <div className="lg:text-[40px] text-3xl leading-10 tracking-tighter font-bold uppercase text-color-1 inline-block w-full text-center">
-              <div className="">LEARN CYBER SECURITY</div>
+              <div className="VT">LEARN CYBER SECURITY</div>
             </div>
             <div className="flex justify-between items-center">
               <img
@@ -44,7 +44,7 @@ const AchievementCard = () => {
         <div className="flex flex-col-reverse md:flex-row gap-8  justify-center items-center w-[73%] text-center md:text-left ">
           <div className="md:order-2 ">
             <div className="text-3xl lg:text-[40px]  leading-7 tracking-tighter font-bold uppercase text-color-1 inline-block w-full text-center">
-              <div className="">EXCITING GOODIES</div>{" "}
+              <div className="VT">EXCITING GOODIES</div>{" "}
             </div>
             <div className="flex justify-between items-center">
               <img
@@ -89,7 +89,7 @@ const AchievementCard = () => {
 
           <div>
             <div className="text-3xl lg:text-[40px] leading-7 tracking-tighter font-bold uppercase text-color-1 inline-block w-full text-center">
-              <div className="">CERTIFICATE</div>
+              <div className="VT">CERTIFICATE</div>
             </div>
             <div className="flex justify-between items-center">
             <img
