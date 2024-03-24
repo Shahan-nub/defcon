@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
 
 const AchievementCard = () => {
   return (
@@ -20,16 +20,15 @@ const AchievementCard = () => {
           </div>
 
           <motion.div
-          initial={{
-            opacity:0,
-            x:200,
-          }}
-          whileInView={{
-            opacity:1,
-            x:0
-          }}
-          viewport={{once:true}}
-          transition={{type:'tween', duration:1}}
+            initial={{
+              opacity: 0,
+              // x:200,
+            }}
+            whileInView={{
+              opacity: [0, 0.4, 0,.6, 1],
+            }}
+            viewport={{ once: true }}
+            transition={{ type: "tween", duration: 0.5, delay:.3,repeatType: "loop", repeat:1}}
           >
             <div className="lg:text-[40px] text-3xl leading-10 tracking-tighter font-bold uppercase text-color-1 inline-block w-full text-center">
               <div className="VT">LEARN CYBER SECURITY</div>
@@ -56,17 +55,17 @@ const AchievementCard = () => {
           </motion.div>
         </div>
         <div className="flex flex-col-reverse md:flex-row gap-8  justify-center items-center w-[73%] text-center md:text-left ">
-          <motion.div className="md:order-2 "
-          initial={{
-            opacity:0,
-            x:-200,
-          }}
-          whileInView={{
-            opacity:1,
-            x:0
-          }}
-          viewport={{once:true}}
-          transition={{type:'tween', duration:1}}
+          <motion.div
+            className="md:order-2 "
+            initial={{
+              opacity: 0,
+              // x:200,
+            }}
+            whileInView={{
+              opacity: [0, 0.4, 0, 0.6, 1],
+            }}
+            viewport={{ once: true }}
+            transition={{ type: "tween", duration: 0.5, delay:0.3,repeatType: "loop", repeat:1}}
           >
             <div className="text-3xl lg:text-[40px]  leading-7 tracking-tighter font-bold uppercase text-color-1 inline-block w-full text-center">
               <div className="VT">EXCITING GOODIES</div>{" "}
@@ -113,33 +112,33 @@ const AchievementCard = () => {
           </div>
 
           <motion.div
-          initial={{
-            opacity:0,
-            x:200,
-          }}
-          whileInView={{
-            opacity:1,
-            x:0
-          }}
-          viewport={{once:true}}
-          transition={{type:'tween', duration:1}}
+            initial={{
+              opacity: 0,
+              // x:200,
+            }}
+            whileInView={{
+              opacity: [0, 0.4, 0, 0.6, 1],
+            }}
+            viewport={{ once: true }}
+            transition={{ type: "tween", duration: 0.5, delay:0.3, repeatType: "loop", repeat:1}}
           >
             <div className="text-3xl lg:text-[40px] leading-7 tracking-tighter font-bold uppercase text-color-1 inline-block w-full text-center">
               <div className="VT">CERTIFICATE</div>
             </div>
             <div className="flex justify-between items-center">
-            <img
+              <img
                 src="/assets/Vector13.png"
                 alt="v"
                 className="lg:h-[15rem] lg:inline-block hidden"
               />
-            <p className="text-white lg:ml-4 text-lg lg:text-xl pt-5">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-              repellat eveniet recusandae praesentium assumenda reiciendis
-              molestias dolores fugit ab molestiae ratione dolor eum deleniti
-              magni, placeat voluptatum nesciunt voluptas aliquid.
-            </p>
-            <img
+              <p className="text-white lg:ml-4 text-lg lg:text-xl pt-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Mollitia repellat eveniet recusandae praesentium assumenda
+                reiciendis molestias dolores fugit ab molestiae ratione dolor
+                eum deleniti magni, placeat voluptatum nesciunt voluptas
+                aliquid.
+              </p>
+              <img
                 src="/assets/Vector13.png"
                 alt="v"
                 className="lg:h-[15rem] lg:inline-block hidden"
