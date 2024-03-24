@@ -1,6 +1,6 @@
 import Image from "next/image";
-import {Defcon} from "./components/Defcon";
-import Achievements from "./components/Achievements";
+import {Defcon} from "./components/defcon/Defcon";
+import Achievements from "./components/achievements/Achievements";
 
 export default function Home() {
   return (
