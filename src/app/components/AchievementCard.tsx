@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
+import {motion} from 'framer-motion';
 
 const AchievementCard = () => {
   return (
@@ -16,7 +19,18 @@ const AchievementCard = () => {
             />
           </div>
 
-          <div>
+          <motion.div
+          initial={{
+            opacity:0,
+            x:200,
+          }}
+          whileInView={{
+            opacity:1,
+            x:0
+          }}
+          viewport={{once:true}}
+          transition={{type:'tween', duration:1}}
+          >
             <div className="lg:text-[40px] text-3xl leading-10 tracking-tighter font-bold uppercase text-color-1 inline-block w-full text-center">
               <div className="VT">LEARN CYBER SECURITY</div>
             </div>
@@ -39,10 +53,21 @@ const AchievementCard = () => {
                 className="lg:h-[15rem] lg:inline-block hidden"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col-reverse md:flex-row gap-8  justify-center items-center w-[73%] text-center md:text-left ">
-          <div className="md:order-2 ">
+          <motion.div className="md:order-2 "
+          initial={{
+            opacity:0,
+            x:-200,
+          }}
+          whileInView={{
+            opacity:1,
+            x:0
+          }}
+          viewport={{once:true}}
+          transition={{type:'tween', duration:1}}
+          >
             <div className="text-3xl lg:text-[40px]  leading-7 tracking-tighter font-bold uppercase text-color-1 inline-block w-full text-center">
               <div className="VT">EXCITING GOODIES</div>{" "}
             </div>
@@ -64,7 +89,7 @@ const AchievementCard = () => {
                 className="lg:h-[15rem] lg:inline-block hidden"
               />
             </div>
-          </div>
+          </motion.div>
           <div className=" md:pr-20  ">
             <Image
               src="/assets/Achievement2.png"
@@ -87,7 +112,18 @@ const AchievementCard = () => {
             />
           </div>
 
-          <div>
+          <motion.div
+          initial={{
+            opacity:0,
+            x:200,
+          }}
+          whileInView={{
+            opacity:1,
+            x:0
+          }}
+          viewport={{once:true}}
+          transition={{type:'tween', duration:1}}
+          >
             <div className="text-3xl lg:text-[40px] leading-7 tracking-tighter font-bold uppercase text-color-1 inline-block w-full text-center">
               <div className="VT">CERTIFICATE</div>
             </div>
@@ -109,7 +145,7 @@ const AchievementCard = () => {
                 className="lg:h-[15rem] lg:inline-block hidden"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
